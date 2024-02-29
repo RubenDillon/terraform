@@ -95,6 +95,14 @@ Do terraform init again and followed by terraform apply
 
 Verify vm creation with 'virsh list' and dhcp with 'virsh net-dhcp-leases vm_network'.Get ip address and do 'ssh developer@' to login to the vm.
 
-Finally do 'terraform destroy' to cleanup.
 
-Enjoy!
+Documentation used to create this git
+=
+
+  - https://github.com/gitsridhar/libvirt-terraform/tree/main
+  - https://dev.to/ruanbekker/terraform-with-kvm-2d9e[
+  - https://www.youtube.com/watch?v=MdeJn1k2b8Y
+  - https://registry.terraform.io/providers/multani/libvirt/latest/docs
+  -  https://github.com/opentofu/registry/tree/main
+  -  https://github.com/dmacvicar/terraform-provider-libvirt
+  -  https://yping88.medium.com/building-and-installing-terraform-provider-for-libvirt-a08a29f93135
