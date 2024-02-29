@@ -4,9 +4,9 @@ Libvirt integration
 =
 
 To Check if Virtualization is enabled on your linux environment:
-'''
+```
 egrep -c '(svm|vmx)' 
-'''
+```
 /proc/cpuinfo should return the number of processors, greater than 0.
 
 lscpu Should grep for 'Virtualization'. VT is turned on if you see VT-x and full in the output.
