@@ -1,0 +1,10 @@
+The following How-To is used to create a MySQL using Terraform / Open Tofu
+
+Clone the current git
+
+use tofu init to deploy the mysql provider
+
+use tofu plan to review the steps that are needed to deploy MySQL locally
+
+finally use tofu apply to deploy the MySQL database in your machine
+
