@@ -1,4 +1,4 @@
-Here you will find everything about Terraform (Tf) that could be useful in a KVM (libvirt) environment.
+Here you will find everything about Terraform (Tf) / OpenTofu (Ot) that could be useful in a KVM (libvirt) environment.
 
 Libvirt integration
 =
@@ -36,58 +36,22 @@ Verify
 virt-host-validate
 ```
 
-Download terraform 
+Download terraform / openTofu
 ```
 wget https://releases.hashicorp.com/terraform/0.13.4/terraform_0.13.4_linux_amd64.zip Unzip and copy terraform executable in /usr/local/sbin (in Path)
 ```
 
-Check terraform version 
+Check terraform version / Tofu version
 ```
 terraform version
+tofu version
 ```
 
-Download terraform libvirt provider 
-```
-mkdir -p ~/.local/share/terraform/plugins
-```
-Go to above directory 
-```
-mkdir registry.terraform.io
-```
-Go to above directory 
-```
-mkdir dmacvicar
-```
-Go to above directory 
-```
-mkdir libvirt
-```
-Go to above directory 
-```
-mkdir 0.6.2
-```
-Go to above directory 
-```
-mkdir linux_amd64
-```
-Go to above directory
-
-Download libvirt terraform plugin Go to https://github.com/dmacvicar/terraform-provider-libvirt/releases and get the latest version (.tar.gz). Unzip it. 
-```
-tar -xvzf file
-```
-Build the example
-```
-Mkdir ~/examples
-```
-
-Go to ~/examples
+If you clone or copy the files from this git, and you use the current main.tf we need only to initialize terraform / tofu to automatically deploy any provider needed.
 
 ```
 terraform init
 ```
-
-Copy the files from this git (main.tf, cloud_init.cfg and network_config.cfg) 
 
 Ensure you update ssh public key in cloud_init.cfg.
 
