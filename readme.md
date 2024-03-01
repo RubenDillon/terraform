@@ -63,6 +63,8 @@ Verify vm creation with 'virsh list' and dhcp with 'virsh net-dhcp-leases vm_net
 Documentation used to create this git
 =
 
+  - https://opentofu.org/docs/intro/core-workflow/
+  - https://opentofu.org/docs/intro/install/
   - https://github.com/gitsridhar/libvirt-terraform/tree/main
   - https://dev.to/ruanbekker/terraform-with-kvm-2d9e[
   - https://www.youtube.com/watch?v=MdeJn1k2b8Y
